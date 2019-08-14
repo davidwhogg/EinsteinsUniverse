@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage{fancyhdr}
+\usepackage{afterpage}
+\usepackage{lipsum}
+
+\addtolength{\textheight}{2.10in}
+\addtolength{\topmargin}{-0.90in}
+\setlength{\headsep}{\baselineskip}
+\setlength{\footskip}{\baselineskip}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\fancyfoot[R]{\sffamily{\thepage}}
+\renewcommand{\headrule}{}
+\renewcommand{\footrule}{}
+\renewcommand{\sectionmark}{}
+
+\begin{document}\sloppy\sloppypar\raggedbottom\frenchspacing\thispagestyle{fancyplain}
+
+Hello World!
+\afterpage{\fancyhead[R]{\fancyplain{}\sffamily{Prof David W. Hogg}}}
+\afterpage{\fancyhead[L]{\fancyplain{}\sffamily{\textsl{Einstein's Universe}, Fall 2019}}}
+
+\lipsum{}
+\lipsum{}
+\lipsum{}
+\lipsum{}
+
+\end{document}
