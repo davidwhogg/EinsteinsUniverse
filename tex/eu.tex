@@ -10,6 +10,11 @@
 % problem formatting
 \newcommand{\problemname}{Problem}
 \newcounter{problem}
+\newenvironment{problem}{%
+  \addvspace{\baselineskip}\noindent\textbf{Problem~\theproblem:}\refstepcounter{problem}
+}{%
+  \par\addvspace{\baselineskip}
+}
 
 % words
 \newcommand{\foreign}[1]{\textsl{#1}}
