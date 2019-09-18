@@ -1,4 +1,6 @@
-
+import numpy as np
+np.random.seed(17)
+print(r"""
 \documentclass[12pt, letterpaper]{article}
 \include{eu}
 
@@ -56,4 +58,4 @@ No need to be precise.
 
 \vfill ~
 
-\end{document}
+\end{document}""")
