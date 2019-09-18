@@ -7,7 +7,8 @@ problems = [r"""\begin{problem} (From Problem Set 1)
 What is the relationship between the energy $E$ and wavelength
 $\lambda$ of a photon? Give a formula that involves energy $E$,
 Planck's Constant $h$, the speed of light $c$, and wavelength
-$\lambda$ (or whatever you need).
+$\lambda$ (or whatever you need; but if you need anything else,
+be very clear with me what it is).
 \end{problem}""", r"""\begin{problem} (From Problem Set 1)
 What is the approximate thickness of a stack of 1000 20-dollar bills?
 No need to be precise, and use any units you like.
