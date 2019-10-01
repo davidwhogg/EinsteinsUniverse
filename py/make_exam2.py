@@ -6,17 +6,22 @@ nstudent = 125 # magic
 
 plt.figure(figsize=(9, 3))
 N = 8192
-xs = np.random.uniform(-4., 6., size=N)
-ys = np.random.uniform(0., 2., size=N)
-I = np.sin(5 * xs) < 2. * np.random.uniform(size=N) - 1.
-xs = np.append(xs[I], np.random.uniform(-4., 6., size=N//2))
-ys = np.append(ys[I], np.random.uniform(0., 2., size=N//2))
+xmax = 20.
+ymax = 6.
+wavelength = 5.0
+xs = np.random.uniform(0, xmax, size=N)
+ys = np.random.uniform(0., ymax, size=N)
+I = np.sin(2. * np.pi * xs / wavelength) < 2. * np.random.uniform(size=N) - 1.
+xs = np.append(xs[I], np.random.uniform(0., xmax, size=N//2))
+ys = np.append(ys[I], np.random.uniform(0., ymax, size=N//2))
 plt.plot(xs, ys, "k.")
 plt.xlabel(r"x (meters)")
 plt.ylabel(r"y (meters)")
 plt.tight_layout()
-plt.xlim(-4, 6)
-plt.ylim(0., 2.)
+plt.xticks(np.arange(21))
+plt.yticks(np.arange(21))
+plt.xlim(0, xmax)
+plt.ylim(0, ymax)
 plt.savefig("../tex/soundwave.png")
 
 problems = [r"""\begin{problem} (From Problem Set 2)
