@@ -1,20 +1,21 @@
 import numpy as np
 import pylab as plt
 np.random.seed(17)
+plt.rc('font', size=8)
 nproblem = 8 # magic
 nstudent = 125 # magic
 
-plt.figure(figsize=(9, 3))
+plt.figure(figsize=(5, 1.5))
 N = 8192
 xmax = 20.
-ymax = 6.
+ymax = 4.
 wavelength = 5.0
 xs = np.random.uniform(0, xmax, size=N)
 ys = np.random.uniform(0., ymax, size=N)
 I = np.sin(2. * np.pi * xs / wavelength) < 2. * np.random.uniform(size=N) - 1.
 xs = np.append(xs[I], np.random.uniform(0., xmax, size=N//2))
 ys = np.append(ys[I], np.random.uniform(0., ymax, size=N//2))
-plt.plot(xs, ys, "k.")
+plt.plot(xs, ys, "k.", ms=1.)
 plt.xlabel(r"x (meters)")
 plt.ylabel(r"y (meters)")
 plt.tight_layout()
@@ -22,7 +23,33 @@ plt.xticks(np.arange(21))
 plt.yticks(np.arange(21))
 plt.xlim(0, xmax)
 plt.ylim(0, ymax)
-plt.savefig("../tex/soundwave.png")
+plt.savefig("../tex/soundwave.png", dpi=200)
+
+plt.figure(figsize=(5, 1.5))
+wavelength = 5.0
+xs = np.arange(0., xmax+0.0001, xmax/1000.)
+ys = ymax / 2. + np.sin(2. * np.pi * xs / wavelength)
+I = xs < 1.5 * wavelength
+ys[I] = ymax / 2.
+I = xs > 2.5 * wavelength
+ys[I] = ymax / 2.
+plt.plot(xs, ys, "k-")
+xabc = np.array([8., 9.5, 10.5])
+yabc = ymax / 2. + np.sin(2. * np.pi * xabc / wavelength)
+plt.plot(xabc, yabc, "k.")
+for l,x,y in zip(["A ", " B", " C"], xabc, yabc):
+    ha = "left"
+    if l == "A ": ha = "right"
+    plt.text(x, y, l, ha=ha, va="top")
+plt.arrow(10., 3.5, -3., 0., lw = 0.3, width=0.08, color="k")
+plt.xlabel(r"x (meters)")
+plt.ylabel(r"y (meters)")
+plt.tight_layout()
+plt.xticks(np.arange(21))
+plt.yticks(np.arange(21))
+plt.xlim(0, xmax)
+plt.ylim(0, ymax)
+plt.savefig("../tex/wavepulse.png", dpi=200)
 
 problems = [r"""\begin{problem} (From Problem Set 2)
 Find a combination of a mass $m$, a length $L$ and a tension (force)
@@ -44,11 +71,13 @@ grating. Which has a larger angular separation between the central
 spot and the first bright spot in the experiment? Red or green? And
 why?
 \end{problem}""", r"""\begin{problem} (From Lecture on 2019-09-24)
-Here's a picture of a traveling sound wave. Roughly what is its wavelength?
-\end{problem}""", r"""\begin{problem} (From Lecture on 2019-09-??)
+Here's a picture of a traveling sound wave. Roughly what is its wavelength?\\
+\includegraphics{soundwave.png}
+\end{problem}""", r"""\begin{problem} (From Lecture on 2019-09-26)
 This wave on a string is moving to the left. The string is moving only
 up and down. Draw arrows at points A, B, and C showing which way those
-bits of string are moving.
+bits of string are moving.\\
+\includegraphics{wavepulse.png}
 \end{problem}"""]
 assert len(problems) == nproblem
 
