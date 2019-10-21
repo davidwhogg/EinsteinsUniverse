@@ -3,9 +3,9 @@ CHECK_RERUN = grep "Rerun to get" $*.log
 
 all: syllabus.pdf \
      ps1.pdf ps2.pdf ps3.pdf ps4.pdf \
-     exam2.pdf
+     exam3.pdf
 
-exam2.tex: ../py/make_exam2.py
+exam3.tex: ../py/make_exam3.py
 	cd ../py ; make
 
 %.pdf: %.tex eu.tex

@@ -1,2 +1,2 @@
 all: 
-	python3 make_exam2.py > ../tex/exam2.tex
+	python3 make_exam3.py > ../tex/exam3.tex
