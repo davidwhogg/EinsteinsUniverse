@@ -9,7 +9,8 @@ problems = [r"""\begin{problem}
 (From Problem Set 3, problem 1)
 In the Galaxy rest frame, Alpha Centauri is 4.4 light-years away from us.
 My friend travels at $0.5\,c$ (relative to this frame) from us to Alpha Centari.
-How long does that take? Give your answer in the Galaxy rest frame, and give it in years.
+How long does that take, according to us?
+That is, give the time in in the Galaxy rest frame, and give it in years.
 \end{problem}""", r"""\begin{problem}
 (From Problem Set 3, problem 2)
 What is the speed of the International Space Station, in terms of the speed of light?
