@@ -6,29 +6,46 @@ nproblem = 8 # magic
 nstudent = 115 # magic
 
 problems = [r"""\begin{problem}
-(From Problem Set 4, problem xx)
-foo
+(From Problem Set 4, problem 1)
+What would be the kinetic energy of a baseball moving at half the
+speed of light? Give your answer in Joules.
 \end{problem}""", r"""\begin{problem}
-(From Problem Set 4, problem xx)
-bar
+(From Problem Set 4, problem 2)
+How much energy does it take to heat up 1\,kg of water by 1\,deg C?
 \end{problem}""", r"""\begin{problem}
-(From Problem Set 4, problem xx)
-yo
+(From Problem Set 4, problem 3)
+How much uranium, very roughly, would it take to replace a 40-tonne carbon
+footprint, if you could switch all that fossil-fuel usage over to
+nuclear fission? That is, what did you get for the mass in uranium for
+this problem?
 \end{problem}""", r"""\begin{problem}
 (From the reading)
-sup
+For what discovery was Einstein awarded the Nobel Prize in 1921?
 \end{problem}""", r"""\begin{problem}
 (From the reading)
-damn
+If you are in a rocket that is moving in the $x$-direction with
+respect to the Earth at $0.75\,c$ and, inside the rocket, you are
+moving at $0.75\,c$ in the $x$ direction with respect to the rocket,
+how fast are you moving with respect to the Earth? No need to
+calculate. All I want to know is: Are you moving closer to $0.75\,c$,
+$0.95\,c$, or $1.5\,c$?
 \end{problem}""", r"""\begin{problem}
-(From Lecture, 2019-10-xx)
-suh
+(From Lecture, 2019-10-29)
+If you bring together two protons and two neutrons in a fusion
+reactor, they will combine to make one helium nucleus. When that
+reaction happens, the nucleus will radiate some energy (in the form of
+photons). Will the He nucleus have a mass that is greater than, equal
+to, or less than the combined mass of two protons and two neutrons?
 \end{problem}""", r"""\begin{problem}
-(From Lecture, 2019-10-xx)
-dude
+(From Lecture, 2019-10-31)
+How does the vomit comet make everyone inside experience weightlessness?
+What are the pilots doing to make that happen?
 \end{problem}""", r"""\begin{problem}
-(From the xxx Lab)
-roar
+(From the Equivalence Principle Lab)
+When the elevator is starting down
+from the top floor, that is, when it is accelerating downwards, does the scale
+show a larger weight or smaller weight than when the elevator was at
+rest at the top?
 \end{problem}"""]
 assert len(problems) == nproblem
 
