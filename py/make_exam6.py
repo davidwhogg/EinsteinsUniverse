@@ -7,28 +7,29 @@ nstudent = 120 # magic
 
 problems = [r"""\begin{problem}
 (From Problem Set 6)
-foo
+What is the mass of a black hole that has a radius of 1\,AU?
 \end{problem}""", r"""\begin{problem}
 (From Problem Set 6)
-sup
+Alice and Bob drive from point A to point B, and it takes Alice 5 hours. If Bob takes one hour longer to
+ do the drive than Alice took, by what factor was he driving slower? Answer in any form you like!
 \end{problem}""", r"""\begin{problem}
 (From Problem Set 6)
-bar
+What is the mass of the black hole at the center of the Milky Way?
+\end{problem}""", r"""\begin{problem}
+(From Problem Set 6)
+Why did the black hole merger discovered by \textsl{LIGO} produce a final black hole that is less massive than the sum of the masses of the two black holes that merged to make it? Or, where did the mass go?
 \end{problem}""", r"""\begin{problem}
 (From the reading)
-yo
-\end{problem}""", r"""\begin{problem}
-(From the reading)
-suh
+The \textsl{Event Horizon Telescope} took an image of a black hole in what galaxy? And what was the mass of that black hole?
 \end{problem}""", r"""\begin{problem}
 (From Lecture)
-GW
+What is the relationship between an acceleration $a$, a change in velocity $\Delta v$ and a small time interval $\Delta t$? Give an equation.
 \end{problem}""", r"""\begin{problem}
 (From Lecture)
-THE
+When a gravitational wave passes through the \textsl{LIGO} detector, what does it do to the detector arms?
 \end{problem}""", r"""\begin{problem}
-(From the Lab)
-foo
+(From Lecture)
+The \textsl{Event Horizon Telescope} measurement of the black-hole size was (in angular units) something like 40\,micro-arcseconds. How many arcseconds are there in a degree?
 \end{problem}"""]
 assert len(problems) == nproblem
 
