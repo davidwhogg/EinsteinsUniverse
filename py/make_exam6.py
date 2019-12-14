@@ -20,7 +20,7 @@ What is the mass of the black hole at the center of the Milky Way?
 Why did the black hole merger discovered by \textsl{LIGO} produce a final black hole that is less massive than the sum of the masses of the two black holes that merged to make it? Or, where did the mass go?
 \end{problem}""", r"""\begin{problem}
 (From the reading)
-The \textsl{Event Horizon Telescope} took an image of a black hole in what galaxy? And what was the mass of that black hole?
+The \textsl{Event Horizon Telescope} took an image of a black hole. Where was that black hole?
 \end{problem}""", r"""\begin{problem}
 (From Lecture)
 What is the relationship between an acceleration $a$, a change in velocity $\Delta v$ and a small time interval $\Delta t$? Give an equation.
