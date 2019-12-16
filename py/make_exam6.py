@@ -48,7 +48,7 @@ for student in range(nstudent):
 Name: \rule[-1ex]{0.60\textwidth}{0.1pt}
 NetID: \rule[-1ex]{0.20\textwidth}{0.1pt}
 
-\section*{\textsl{Einstein's Universe} Term Exam 5}
+\section*{\textsl{Einstein's Universe} Term Exam 6}
 \setcounter{problem}{1}
 
 """)
