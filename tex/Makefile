@@ -5,7 +5,7 @@ all: syllabus.pdf \
      ps1.pdf ps2.pdf ps3.pdf ps4.pdf ps5.pdf ps6.pdf \
      exam1.pdf
 
-exam6.tex: ../py/make_exam1.py
+exam1.tex: ../py/make_exam1.py
 	cd ../py ; make
 
 %.pdf: %.tex eu.tex

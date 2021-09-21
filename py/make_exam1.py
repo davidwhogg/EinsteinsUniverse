@@ -16,13 +16,16 @@ How many cubic millimeters are there in a liter?
 \end{problem}
 """,
 r"""\begin{problem} (From Problem Set 1)
-
+What are the SI units for pressure, in base units?
+That is, what
+combination of kg (kilograms), m (meters), and s (seconds)
+has units of pressure?
 \end{problem}
 """,
 r"""\begin{problem} (From the reading)
 Classical mechanics, or Newtonian mechanics, is only valid in certain
-circumstances. When do the laws of classical mechanics, like $F =
-m\,a$ for example, become wrong or break down? There are many answers
+circumstances. When do the laws of classical mechanics, like $\vec{F} =
+m\,\vec{a}$ for example, become wrong or break down? There are many answers
 to this problem; I will take anything correct.
 \end{problem}
 """,
@@ -39,11 +42,18 @@ You don't need a calculator to solve this problem.
 \end{problem}
 """,
 r"""\begin{problem} (From Lecture)
+Which of the following physical quantities are vectors?
+\\
+\textsl{(a)}~energy,
+\textsl{(b)}~mass,
+\textsl{(c)}~force,
+\textsl{(d)}~momentum,
+\textsl{(e)}~acceleration.
 \end{problem}
 """,
 r"""\begin{problem} (From Lecture)
-Complete this statement of Newton's third law:
-
+Complete this statement of Newton's third law. Make it as specific as
+you can.\\[2ex]
 \textbf{For every force on object A from object B, there will be...}
 \end{problem}
 """]
