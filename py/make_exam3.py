@@ -53,12 +53,7 @@ print(r"""
 
 for student in range(nstudent):
     print(r"""
-\noindent
-Name: \rule[-1ex]{0.60\textwidth}{0.1pt}
-NetID: \rule[-1ex]{0.20\textwidth}{0.1pt}
-
-\section*{\textsl{Einstein's Universe} Term Exam 3}
-\setcounter{problem}{1}
+\examheader{Term Exam 3}
 
 """)
     pindx = np.argsort(np.random.uniform(size=nproblem))
