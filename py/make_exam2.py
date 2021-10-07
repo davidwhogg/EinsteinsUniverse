@@ -5,6 +5,8 @@ plt.rc('font', size=8)
 nproblem = 8 # magic
 nstudent = 125 # magic
 
+"""
+# THIS FIGURE MAKES A LONGITUDINAL WAVE
 plt.figure(figsize=(5, 1.5))
 N = 8192
 xmax = 20.
@@ -24,6 +26,24 @@ plt.yticks(np.arange(21))
 plt.xlim(0, xmax)
 plt.ylim(0, ymax)
 plt.savefig("../tex/soundwave.png", dpi=200)
+"""
+
+plt.figure(figsize=(5, 1.5))
+N = 8192
+xmax = 20.
+ymax = 3.
+wavelength = 5.3
+xs = np.arange(0., xmax+1., 0.01)
+ys = np.sin(2. * np.pi * xs / wavelength)
+plt.plot(xs, ys, "k-")
+plt.xlabel(r"x (meters)")
+plt.ylabel(r"y (meters)")
+plt.tight_layout()
+plt.xticks(np.arange(21))
+plt.yticks(np.arange(-5,5))
+plt.xlim(0, xmax)
+plt.ylim(-ymax, ymax)
+plt.savefig("../tex/randomwave.png", dpi=200)
 
 plt.figure(figsize=(5, 1.5))
 wavelength = 5.0
@@ -52,14 +72,17 @@ plt.ylim(0, ymax)
 plt.savefig("../tex/wavepulse.png", dpi=200)
 
 problems = [r"""\begin{problem} (From Problem Set 2)
-Find a combination of a mass $m$, a length $L$ and a tension (force)
-$T$ that has units of speed (length over time).
+What, roughly, are the sizes of a water molecule, an iron atom, and a uranium
+atom?
 \end{problem}""", r"""\begin{problem} (From Problem Set 2)
 Electrons are bound to a metal by a work function of $2\,\eV$.
 Does a photon of wavelength $0.5\,\mu m$ have enough energy
 to liberate one of those electrons?
-\end{problem}""", r"""\begin{problem} (From the reading)
-What, roughly, is the principle of relativity? State it in 30 words or less!
+\end{problem}""", r"""\begin{problem} (From Problem Set 2)
+What would be the SI base units of the expression
+$\displaystyle\sqrt{\frac{T\,L}{M}}$?
+(Note that this may be \emph{different} from the expression
+you had on your Problem Set.)
 \end{problem}""", r"""\begin{problem} (From the reading)
 Boltzmann, Fresnel, Maxwell: Which one of these scientists was
 \emph{not} involved in creating the kinetic theory of gases?
@@ -69,11 +92,12 @@ A $50\,\g$ mass will have roughly what weight in $N$? Roughly!
 You put red and green light through the same diffraction
 grating. Which has a larger angular separation between the central
 spot and the first bright spot in the experiment? Red or green? And
-why?
-\end{problem}""", r"""\begin{problem} (From Lecture on 2019-09-24)
-Here's a picture of a traveling sound wave. Roughly what is its wavelength?\\
-\includegraphics{soundwave.png}
-\end{problem}""", r"""\begin{problem} (From Lecture on 2019-09-26)
+why (in 10 words or less)?
+\end{problem}""", r"""\begin{problem} (From Lecture on 2019-09-30)
+Here's a picture of a traveling wave on a pond, traveling to the left.
+Roughly what is its wavelength?\\
+\includegraphics{randomwave.png}
+\end{problem}""", r"""\begin{problem} (From Lecture on 2019-09-28)
 This wave on a string is moving to the left. The string is moving only
 up and down. Draw arrows at points A, B, and C showing which way those
 bits of string are moving.\\
