@@ -1,2 +1,4 @@
+EXAMNUM     = 3
+
 all: 
-	python3 make_exam2.py > ../tex/exam2.tex
+	python3 make_exam${EXAMNUM}.py > ../tex/exam${EXAMNUM}.tex
