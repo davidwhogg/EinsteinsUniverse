@@ -6,35 +6,34 @@ nproblem = 8 # magic
 nstudent = 115 # magic
 
 problems = [r"""\begin{problem}
-(From Problem Set 3, problem 1)
+(From Problem Set 3)
 In the Galaxy rest frame, Alpha Centauri is 4.4 light-years away from us.
 My friend travels at $0.5\,c$ (relative to this frame) from us to Alpha Centari.
 How long does that take, according to us?
 That is, give the time in in the Galaxy rest frame, and give it in years.
 \end{problem}""", r"""\begin{problem}
-(From Problem Set 3, problem 2)
+(From Problem Set 3)
 What is the speed of the International Space Station, in terms of the speed of light?
 That is, what is v/c for the International Space Station? Approximately!
 \end{problem}""", r"""\begin{problem}
-(From Problem Set 3, problem 3)
+(From Problem Set 3)
 Reproduce here the triangular path of light you drew for this problem, and label the lengths
 of the sides of the triangle.
 \end{problem}""", r"""\begin{problem}
 (From the reading)
-Muons live for a couple of milliseconds. Naively, they can't travel more than few hundred meters,
+Muons live for a couple of milliseconds. Naively, therefore, they can't travel more than few hundred meters,
 even traveling near the speed of light. And yet, they often are observed to travel many kilometers.
 How is this possible?
 \end{problem}""", r"""\begin{problem}
 (From the reading)
-Why did Einstein want to have astronomers precisely observe a Solar eclipse?
-What was he hoping they would see?
+What is the principle of relativity? State it in less than 30 words, and circle your answer.
 \end{problem}""", r"""\begin{problem}
-(From Lecture, 2019-10-10)
+(From Lecture)
 Alice and Bob pass each other at high speed.
 When they pass, Bob observes Alice's clock to run slow.
 If Bob also had a clock, would Alice observe Bob's clock to run fast or slow?
 \end{problem}""", r"""\begin{problem}
-(From Lecture, 2019-10-17)
+(From Lecture)
 What is the formula for the Lorentz factor $\gamma$, in terms of $v$ and $c$?
 \end{problem}""", r"""\begin{problem}
 (From the Photoelectric Effect Lab)
