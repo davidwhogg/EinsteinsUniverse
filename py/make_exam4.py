@@ -7,13 +7,15 @@ nstudent = 115 # magic
 
 problems = [r"""\begin{problem}
 (From Problem Set 4, problem 1)
-What would be the kinetic energy of a baseball moving at half the
-speed of light? Give your answer in Joules.
+Roughly speaking, what is the rest-mass energy of a baseball?
+That is, what is the energy equivalent of the mass of a baseball?
+Use $E=m\,c^2$ and give your answer in Joules.
+\end{problem}""", r"""\begin{problem}
+(From Lecture)
+Einstein didn't write down $E=m\,c^2$ originally. What equation did he
+write down, for which $E=m\,c^2$ is a special case?
 \end{problem}""", r"""\begin{problem}
 (From Problem Set 4, problem 2)
-How much energy does it take to heat up 1\,kg of water by 1\,deg C?
-\end{problem}""", r"""\begin{problem}
-(From Problem Set 4, problem 3)
 How much uranium, very roughly, would it take to replace a 40-tonne carbon
 footprint, if you could switch all that fossil-fuel usage over to
 nuclear fission? That is, what did you get for the mass in uranium for
@@ -30,22 +32,22 @@ how fast are you moving with respect to the Earth? No need to
 calculate. All I want to know is: Are you moving closer to $0.75\,c$,
 $0.95\,c$, or $1.5\,c$?
 \end{problem}""", r"""\begin{problem}
-(From Lecture, 2019-10-29)
+(From Lecture)
 If you bring together two protons and two neutrons in a fusion
 reactor, they will combine to make one helium nucleus. When that
 reaction happens, the nucleus will radiate some energy (in the form of
 photons). Will the He nucleus have a mass that is greater than, equal
 to, or less than the combined mass of two protons and two neutrons?
 \end{problem}""", r"""\begin{problem}
-(From Lecture, 2019-10-31)
-How does the vomit comet make everyone inside experience weightlessness?
-What are the pilots doing to make that happen?
+(From Lecture)
+In normal space, the straight line (or geodesic) is the path of \emph{shortest
+total distance} between two points. In spacetime, the geodesic is the path
+of what?
 \end{problem}""", r"""\begin{problem}
-(From the Equivalence Principle Lab)
-When the elevator is starting down
-from the top floor, that is, when it is accelerating downwards, does the scale
-show a larger weight or smaller weight than when the elevator was at
-rest at the top?
+(From Problem Set 4, problem 3)
+When the elevator is accelerating downwards, is the magnitude of the
+normal force from the elevator floor on the package greater than, smaller than,
+or equal to $m\,g$?
 \end{problem}"""]
 assert len(problems) == nproblem
 
