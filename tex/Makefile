@@ -1,6 +1,6 @@
 LATEX       = pdflatex
 CHECK_RERUN = grep "Rerun to get" $*.log
-EXAMNUM     = 4
+EXAMNUM     = 5
 
 all: syllabus.pdf \
      ps1.pdf ps2.pdf ps3.pdf ps4.pdf ps5.pdf ps6.pdf \

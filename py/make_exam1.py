@@ -1,7 +1,7 @@
 import numpy as np
 np.random.seed(17)
 nproblem = 8 # magic
-nstudent = 140 # magic
+nstudent = 150 # magic
 
 problems = [
 r"""\begin{problem} (From Problem Set 1)

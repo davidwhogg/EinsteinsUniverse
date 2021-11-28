@@ -3,7 +3,7 @@ import pylab as plt
 np.random.seed(17)
 plt.rc('font', size=8)
 nproblem = 8 # magic
-nstudent = 120 # magic
+nstudent = 150 # magic
 
 problems = [r"""\begin{problem}
 (From Problem Set 6)
