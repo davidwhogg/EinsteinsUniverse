@@ -4,7 +4,7 @@ EXAMNUM     = 6
 
 all: syllabus.pdf \
      ps1.pdf ps2.pdf ps3.pdf ps4.pdf ps5.pdf ps6.pdf \
-     exam${EXAMNUM}.pdf
+     exam${EXAMNUM}.pdf final.pdf
 
 exam${EXAMNUM}.tex: ../py/make_exam${EXAMNUM}.py
 	cd ../py ; make
