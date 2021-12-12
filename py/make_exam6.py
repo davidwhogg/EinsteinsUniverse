@@ -7,29 +7,30 @@ nstudent = 150 # magic
 
 problems = [r"""\begin{problem}
 (From Problem Set 6)
-What is the mass of a black hole that has a radius of 1\,AU?
+What would be the radius of a black hole with the mass of the Earth?
 \end{problem}""", r"""\begin{problem}
 (From Problem Set 6)
-Alice and Bob drive from point A to point B, and it takes Alice 5 hours. If Bob takes one hour longer to
- do the drive than Alice took, by what factor was he driving slower? Answer in any form you like!
+What is the distance between Earth and the source of GW170817?
 \end{problem}""", r"""\begin{problem}
 (From Problem Set 6)
-What is the mass of the black hole at the center of the Milky Way?
+What is the mean orbital speed $v$ of the star S2 in the Galactic Center?
 \end{problem}""", r"""\begin{problem}
 (From Problem Set 6)
-Why did the black hole merger discovered by \textsl{LIGO} produce a final black hole that is less massive than the sum of the masses of the two black holes that merged to make it? Or, where did the mass go?
+In event GW150914, what were the three black-hole masses $M_1,M_2,M_3$?
 \end{problem}""", r"""\begin{problem}
 (From the reading)
-The \textsl{Event Horizon Telescope} took an image of a black hole. Where was that black hole?
+In what year did LIGO make its first discovery of a black-hole merger?
 \end{problem}""", r"""\begin{problem}
 (From Lecture)
-What is the relationship between an acceleration $a$, a change in velocity $\Delta v$ and a small time interval $\Delta t$? Give an equation.
+Roughly what is the orbital period of the International Space Station?
+\end{problem}""", r"""\begin{problem}
+(From the reading)
+What happens when something crosses the horizon of the black hole?
 \end{problem}""", r"""\begin{problem}
 (From Lecture)
-When a gravitational wave passes through the \textsl{LIGO} detector, what does it do to the detector arms?
-\end{problem}""", r"""\begin{problem}
-(From Lecture)
-The \textsl{Event Horizon Telescope} measurement of the black-hole size was (in angular units) something like 40\,micro-arcseconds. How many arcseconds are there in a degree?
+What---very roughly---is the (dimensionless) ratio of the mass of the black
+hole at the center of the Milky Way to the total mass of the Milky Way? That is,
+what fraction of the total mass of the Milky Way is the black hole?
 \end{problem}"""]
 assert len(problems) == nproblem
 
